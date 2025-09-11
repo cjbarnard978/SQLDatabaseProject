@@ -37,3 +37,19 @@ CREATE TABLE IF NOT EXISTS Attributes (
 )
 ''')
 print ('created')
+
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS Events (
+    Event_ID INTEGER PRIMARY KEY AUTOINCREMENT, 
+    sourceID INTEGER, 
+    saintID INTEGER, 
+    M_ID INTEGER,
+    FOREIGN KEY (sourceid) REFERENCES sources (sourceid),
+    FOREIGN KEY (saintID) REFERENCES Saints (SaintID),
+    FOREIGN KEY (M_ID) REFERENCES Attributes (M_ID)
+)
+''')
+print("created")
+
+conn.close()
+print('DBs created')
