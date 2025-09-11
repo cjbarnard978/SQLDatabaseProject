@@ -16,3 +16,24 @@ CREATE TABLE IF NOT EXISTS Saints (
     Death_Type TEXT
 )        
 ''')
+print ('created')
+
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS sources (
+    sourceID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Title TEXT, 
+    Author TEXT,
+    Year INTEGER,
+    Language TEXT
+)
+''')
+print ('created')
+
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS Attributes (
+    M_ID INTEGER,
+    Miracle_Type TEXT,
+    Saint TEXT
+)
+''')
+print ('created')
