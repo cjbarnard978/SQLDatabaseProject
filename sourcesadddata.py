@@ -4,7 +4,7 @@ cursor = conn.cursor()
 print("connected")
 
 cursor.execute('''
-INSERT INTO sources (sourceID, Title, Author, Year, Language VALUES
+INSERT INTO sources (sourceID, Title, Author, Year, Language) VALUES
     (1, 'Ancient Lives of Scottish Saints', 'Translator W.M. Metcalfe', '1895', 'English'),
     (2, 'Chronicle of the Scottish Nation', 'John of Fordun Translator Felix Skene', '1872', English),
     (3, 'Martyrology of Oengus the Culdee', 'Whitley Stokes', '1905', 'English'),
