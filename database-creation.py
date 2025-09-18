@@ -32,8 +32,7 @@ print ('created')
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS Attributes (
     M_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-    Miracle_Type TEXT,
-    Saint TEXT
+    Miracle_Type TEXT
 )
 ''')
 print ('created')
