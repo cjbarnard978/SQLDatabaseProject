@@ -1,10 +1,17 @@
-import sqlite3
+
+
+import sqlite3 
 conn = sqlite3.connect('scotsirishsaints.db')
 cursor = conn.cursor()
-print("connected")
+print('connected')
+
 
 cursor.execute('''
-DELETE FROM Saints;
+CREATE TABLE IF NOT EXISTS Attributes (
+    M_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Miracle_Type TEXT
+)
 ''')
-print('done')
+print ('created')
 conn.commit()
+print('closed')
