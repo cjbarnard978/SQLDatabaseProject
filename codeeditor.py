@@ -8,7 +8,7 @@ print('connected')
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS Attributes (
-    M_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    M_ID INTEGER PRIMARY KEY AUTOINCREMENT,
     Miracle_Type TEXT
 )
 ''')

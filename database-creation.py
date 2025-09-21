@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS Events (
     M_ID INTEGER,
     FOREIGN KEY (sourceid) REFERENCES sources (sourceid),
     FOREIGN KEY (saintID) REFERENCES Saints (SaintID),
-    FOREIGN KEY (M_ID) REFERENCES Attributes (M_ID)
+    FOREIGN KEY (M_id) REFERENCES Attributes (M_id)
 )
 ''')
 print("created")
